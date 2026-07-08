@@ -1,13 +1,12 @@
 # =====================================================================
-# CredPay - Example variable values
-# Copy to terraform.tfvars and adjust. Do NOT commit real tfvars.
+# CredPay - REAL variable values (git-ignored - do NOT commit)
 # =====================================================================
 
 # Azure Subscription ID
-subscription_id = "00000000-0000-0000-0000-000000000000"
+subscription_id = "e81eb20e-a2b5-4d15-ba82-c3be207cefc8"
 
 # Azure Region
-location = "eastus"
+location = "canadacentral"
 
 # ----- Networking -----
 vnet_address_space     = "10.0.0.0/16"
@@ -18,7 +17,7 @@ postgres_subnet_prefix = "10.0.16.0/24"
 node_count     = 3
 node_min_count = 2
 node_max_count = 5
-vm_size        = "Standard_DS2_v2"
+vm_size        = "Standard_D2alds_v6"
 
 # ----- PostgreSQL -----
 postgres_version        = "16"
@@ -27,3 +26,4 @@ database_name           = "credpay"
 
 # ----- Monitoring -----
 log_retention_days = 30
+
