@@ -12,8 +12,8 @@ pool:
 variables:
 
   # Azure Container Registry Service Connection
-  acrServiceConnection: 'CredPay-ACR-SC'
-  azureServiceConnection: 'scnew2'
+  acrServiceConnection: 'cred-acr'
+  azureServiceConnection: 'credpayserviceconnection'
 
   # Image Tag
   tag: '$(Build.BuildId)'
@@ -24,10 +24,10 @@ variables:
   paymentRepository: 'credpay/payment-service'
 
     # Terraform Backend
-  tfStateRG: 'CredProj'
-  tfStateStorage: 'credprojstate'
-  tfStateContainer: 'statefile'
-  tfStateKey: 'credpay.terraform.tfstate'
+  tfStateRG: 'CredPay'
+  tfStateStorage: 'credpaystorageaccount'
+  tfStateContainer: 'credpaysacontainer'
+  tfStateKey: 'terraform.tfstate'
 
 # =========================================================
 # STAGES
